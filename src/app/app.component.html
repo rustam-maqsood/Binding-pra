@@ -1,0 +1,30 @@
+<!-- this is for two way binding  -->
+    <h3>I am in The App Commponent</h3>
+<br>
+<app-servers></app-servers>
+
+<!-- //this is for assigment:
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <hr>
+            <label>User Name</label>
+            <input type="text" class="form-control" [(ngModel)]="username">
+            <p>{{username}}</p>
+            <button
+             class="btn btn-primary"
+             [disabled]="username===''"
+             (click)="username=''">Reset User</button>
+        </div>
+    </div>
+</div> -->
+<!-- <hr> -->
+<!-- <button class="btn btn-primary" (click)="showSecret =!showSecret">Display Details</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+
+<p *ngIf="showSecret">secret password = tuna</p>
+<div 
+*ngFor="let logItem of log; "
+[ngStyle]="{backgroundColor: logItem >=5 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text':logItem>=5}"
+>{{logItem}}</div>

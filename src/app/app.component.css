@@ -1,0 +1,10 @@
+h3{
+    color: green;
+}
+p{
+    background-color: azure;
+    border: 2px solid gray;
+}
+.white-text{
+    color: white;
+}
